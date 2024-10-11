@@ -19,6 +19,8 @@ class Producto(models.Model):
         else:
             color = 'red'  
         return format_html('<span style="color:{};">${}</span>',color,self.precio)  
+    
+    
     color_precio.short_description = 'Precio(color)' 
           
 def __str__(self):

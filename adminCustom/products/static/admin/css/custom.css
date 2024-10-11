@@ -1,0 +1,27 @@
+/* Fondo del cuerpo del admin */
+body {
+    background-color:  #5e4caf;
+}
+
+/* Cambia el color del título del panel de administración */
+.admin-title {
+    color: #5e4caf;
+}
+
+/* Ajusta el tamaño de fuente de los filtros */
+.admin-filter {
+    font-size: 14px;
+}
+
+/* Cambia el color de los botones de acción en el admin */
+button {
+    background-color: #344;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #5e4caf;
+}
