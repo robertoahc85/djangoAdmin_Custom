@@ -20,7 +20,13 @@ class Producto(models.Model):
             color = 'red'  
         return format_html('<span style="color:{};">${}</span>',color,self.precio)  
     
-    
+    def icono_valoracion(self):
+        if self.valoracion >=10:
+            return format_html('<span style="color:green">&#128077</span>')
+        else:
+            return format_html('<span style="color:green">&#128078</span>')
+        
+    icono_valoracion.short_description = 'Valoracion'
     color_precio.short_description = 'Precio(color)' 
           
 def __str__(self):
